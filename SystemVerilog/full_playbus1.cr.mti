@@ -1,0 +1,32 @@
+H:/lab/t4/full_playbus1/components.sv {1 {vlog -work work -vopt -sv -stats=none H:/lab/t4/full_playbus1/components.sv
+Model Technology ModelSim SE-64 vlog 10.6g Compiler 2019.08 Aug  3 2019
+-- Compiling module contention
+-- Compiling module eprom
+-- Compiling module ram
+-- Compiling module sevenseg
+-- Compiling module register
+-- Compiling module buffer
+
+Top level modules:
+	contention
+	eprom
+	ram
+	sevenseg
+	register
+	buffer
+
+} {} {}} H:/lab/t4/full_playbus1/test_controller.sv {1 {vlog -work work -vopt -sv -stats=none {H:\lab\t4\full_playbus1\test_controller.sv}
+Model Technology ModelSim SE-64 vlog 10.6g Compiler 2019.08 Aug  3 2019
+-- Compiling module test_controller
+
+Top level modules:
+	test_controller
+
+} {} {}} H:/lab/t4/full_playbus1/test_playbus1.sv {1 {vlog -work work -vopt -sv -stats=none H:/lab/t4/full_playbus1/test_playbus1.sv
+Model Technology ModelSim SE-64 vlog 10.6g Compiler 2019.08 Aug  3 2019
+-- Compiling module test_playbus1
+
+Top level modules:
+	test_playbus1
+
+} {} {}}

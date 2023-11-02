@@ -1,0 +1,65 @@
+/////////////////////////////////////////////////////////////////////
+// Design unit:
+//            :
+// File name  : playbus1.sv
+//            :
+// Description: PlayBus level 1 emulator
+//            :
+// Limitations: None
+//            :
+// System     : SystemVerilog IEEE 1800-2005
+//            :
+// Author     : Mark Zwolinski
+//            : School of Electronics and Computer Science
+//            : University of Southampton
+//            : Southampton SO17 1BJ, UK
+//            : mz@ecs.soton.ac.uk
+//
+// Revision   : Version 1.0 24/08/17
+//            :
+/////////////////////////////////////////////////////////////////////
+
+
+
+// playbus outputs
+// disp0 shows output value
+// disp1 shows state of bus
+// disp2 shows function selected
+// disp3 shows address
+
+//playbus inputs - note we don't have enough DIL switches on the board!
+// sw0 data input to bus
+// sw1 address selector
+// sw2 function selector
+// clk input
+
+
+module full_playbus1 (output logic [6:0] disp0, disp1, disp2, disp3,
+                input logic [3:0] sw0, input logic [2:0] sw1, sw2,
+                input logic n_clk);
+
+wire [3:0] data; // this is the main system bus
+logic [3:0] ledout;
+logic [2:0] address, func;
+logic contend, Z, n_RAMO, n_ROMO, n_SWBEN, n_RAMW, LEDLTCH, FOLLO, GO, clk;
+
+ assign clk = ~n_clk;
+
+contention c0 (.*);
+eprom e0 (.data(data), .address(address), .OE(ROMO), .CS(~contend));
+ram r0 (.data(data), .address(address), .OE(RAMO), .CS(~contend), .WE(RAMW), .clk(clk));
+
+buffer #(4) b0 (.data(data), .data_in(sw0), .OE(SWBEN), .CS(~contend));
+
+register #(3) l0 (.data_out(address), .data_in(sw1), .OE(1'b1), .clk(clk));
+register #(3) l1 (.data_out(func), .data_in(sw2), .OE(1'b1), .clk(clk));
+register #(4) l2 (.data_out(ledout), .data_in(data), .OE(LEDLTCH), .clk(clk));
+
+sevenseg s0 (.seg(disp0), .value(ledout), .Z(1'b0), .contend(1'b0));
+sevenseg s1 (.seg(disp1), .value (data), .Z(Z), .contend(contend));
+sevenseg s2 (.seg(disp2), .value({1'b0,func}), .Z(1'b0), .contend(1'b0));
+sevenseg s3 (.seg(disp3), .value({1'b0,address}), .Z(1'b0), .contend(1'b0));
+
+controller asm (.*);
+
+endmodule
