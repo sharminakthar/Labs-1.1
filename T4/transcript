@@ -1,0 +1,32 @@
+# Compile of components.sv was successful.
+# Compile of playbus0.sv was successful.
+# Compile of test_playbus0.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.test_playbus0
+# vsim -novopt work.test_playbus0 
+# Start time: 21:18:31 on Dec 11,2019
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing H:/T4/work.test_playbus0
+# Loading sv_std.std
+# Loading work.test_playbus0
+# Refreshing H:/T4/work.playbus0
+# Loading work.playbus0
+# Refreshing H:/T4/work.contention
+# Loading work.contention
+# Refreshing H:/T4/work.eprom
+# Loading work.eprom
+# Refreshing H:/T4/work.ram
+# Loading work.ram
+# Refreshing H:/T4/work.register
+# Loading work.register
+# Refreshing H:/T4/work.buffer
+# Loading work.buffer
+# Refreshing H:/T4/work.sevenseg
+# Loading work.sevenseg
+add wave -position end  sim:/test_playbus0/p0/data
+add wave -position end  sim:/test_playbus0/p0/contend
+add wave -position end  sim:/test_playbus0/p0/Z
+# Load canceled
+run -all
+# End time: 21:19:54 on Dec 11,2019, Elapsed time: 0:01:23
+# Errors: 1, Warnings: 1

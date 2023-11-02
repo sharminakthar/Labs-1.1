@@ -1,0 +1,202 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modeltech64_10.6g/examples
+vbuffer
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1576099099
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 hKX[;O0U7b80T6OZ[<OfP0
+I6i`Mi4P=JcQ9WNaEb2ZfI3
+Z3 !s105 components_sv_unit
+S1
+Z4 dH:/T4
+Z5 w1503596046
+Z6 8H:/T4/components.sv
+Z7 FH:/T4/components.sv
+L0 106
+Z8 OL;L;10.6g;65
+Z9 !s108 1576099099.000000
+Z10 !s107 H:/T4/components.sv|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|H:/T4/components.sv|
+!i113 0
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 tCvgOpt 0
+vcontention
+R0
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Eizd^WWiEIbgG5`9F9VHd0
+INHYI?5cNHMWUoT_8Y=[Iz0
+R3
+S1
+R4
+R5
+R6
+R7
+L0 25
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+veprom
+R0
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 <COog9K8?ZLAXb09B9PEU3
+Icg8^l3RkHIiFW]e9T]3Q<1
+R3
+S1
+R4
+R5
+R6
+R7
+L0 36
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vplaybus0
+R0
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 _VG361Ha<4YVN1b8@MCBe1
+IgF>kmBAEL=:>A2bn2:Ie63
+!s105 playbus0_sv_unit
+S1
+R4
+w1503595632
+8H:/T4/playbus0.sv
+FH:/T4/playbus0.sv
+L0 28
+R8
+R9
+!s107 H:/T4/playbus0.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|H:/T4/playbus0.sv|
+!i113 0
+R12
+R13
+vram
+R0
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^Hcmh9zgne_`YfY51]_3>0
+IJm8g4PECJWWAl^R9Iec1<0
+R3
+S1
+R4
+R5
+R6
+R7
+L0 52
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vregister
+R0
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 VO:S1Qh<i0>VD?IE>=PlC3
+IBTM07`1[7Q_B>HBb7NOcf1
+R3
+S1
+R4
+R5
+R6
+R7
+L0 96
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vsevenseg
+R0
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 mO<b<PLlG9YKMVWHhX5D01
+I?mPh<:bbU3^S_?SeQ:LgL3
+R3
+S1
+R4
+R5
+R6
+R7
+L0 66
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vtest_playbus0
+R0
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 E@kMo]`e;@z_jS2LQ@<Q23
+IKf]J4627L>o_XCgj5U^^Y3
+!s105 test_playbus0_sv_unit
+S1
+R4
+w1503598496
+8H:/T4/test_playbus0.sv
+FH:/T4/test_playbus0.sv
+L0 22
+R8
+R9
+!s107 H:/T4/test_playbus0.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|H:/T4/test_playbus0.sv|
+!i113 0
+R12
+R13
